@@ -162,6 +162,20 @@ nextButton.addEventListener("click", () => {
     }
 })
 
+prevButton.addEventListener("click", () => {
+    // decrease the question index
+    questionIndex--;
+    // prepare the previous question
+    prepareQuestion(questionIndex);
+    // Hide the prev button
+    if (questionIndex == 0) {
+        hideButton(prevButton);
+    }
+    // Show the next button if not at the end of the questions list
+    if (questionIndex !== questionIndex.length - 1) {
+        showButton(nextButton);
+    }
+})
 
 // Start the quiz
 startQuiz();
