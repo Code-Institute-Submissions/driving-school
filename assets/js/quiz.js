@@ -88,5 +88,58 @@ function selectButton(event) {
     questions[questionIndex].answers[parseInt(selectedButton) - 1].answered = true;
 }
 
+function displayResult() {
+    // For each question create a DOM element to add to
+    // represent the answers section
+    questions.forEach(question => {
+        const wrapper = document.createElement("div");
+        const heading = document.createElement("div");
+        const answersWrapper = document.createElement("div");
+
+        wrapper.classList.add("question-card", "answers-card");
+        heading.classList.add("heading", "d-flex", "justify-content-between");
+        answersWrapper.classList.add("answers", "d-flex", "flex-column");
+
+        heading.innerHTML = `<h3 id="question" class="mb-4">${question.question}</h3>`;
+
+        question.answers.forEach(ans => {
+            const showAnswer = document.createElement("button");
+            showAnswer.classList.add("answer", "btn", "btn-outline-secondary", "text-start", "mb-3", "disabled")
+
+            showAnswer.innerText = `${ans.text}`
+            answersWrapper.appendChild(showAnswer)
+
+            // calculate the score
+            if (ans.answered && ans.correct) {
+                totalScore += 2;
+            }
+
+            // if the answers the user added is incorrect add red background
+            if (ans.answered && !ans.correct) {
+                showAnswer.classList.remove("btn-outline-secondary");
+                showAnswer.classList.add("btn-danger");
+            }
+
+            // if it is correct add green background
+            if (ans.correct) {
+                showAnswer.classList.remove("btn-outline-secondary");
+                showAnswer.classList.add("btn-success");
+            }
+        })
+
+        questionCard.classList.add("hidden");
+        result.classList.remove("hidden");
+        score.innerText = `Your score is: ${totalScore}/10`;
+
+        wrapper.appendChild(heading);
+        wrapper.appendChild(answersWrapper);
+
+        resultQuestions.appendChild(wrapper);
+    })
+
+    // Start again
+    startAgain.addEventListener("click", () => location.reload());
+}
+
 // Start the quiz
 startQuiz();
