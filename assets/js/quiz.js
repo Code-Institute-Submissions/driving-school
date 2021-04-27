@@ -141,5 +141,27 @@ function displayResult() {
     startAgain.addEventListener("click", () => location.reload());
 }
 
+// Handle forwarding to next question
+nextButton.addEventListener("click", () => {
+    // incereasing the question index
+    questionIndex++;
+    // preparing the next question
+    prepareQuestion(questionIndex);
+    // Show the prev button
+    if (questionIndex > 0) {
+        showButton(prevButton);
+    }
+    // Hide the next button if reached the end of the questions list
+    if (questionIndex === questions.length - 1) {
+        hideButton(nextButton);
+    }
+
+    if (questionIndex === questions.length - 1) {
+        // Display the results if we got to the end of the quiz
+        displayResult();
+    }
+})
+
+
 // Start the quiz
 startQuiz();
