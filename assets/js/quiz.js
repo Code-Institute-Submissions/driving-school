@@ -37,5 +37,10 @@ function showButton(btn) {
     btn.classList.remove("hide");
 }
 
+// This function loads all of the game logic and
+// starts the quiz
+function startQuiz() {
+    prepareQuestion(questionIndex);
+
 // Start the quiz
 startQuiz();
