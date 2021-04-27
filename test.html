@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Font Awsesome CSS: used for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <!-- Googole Fonts: this site uses Open Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kelly Driving School</title>
+</head>
+
+<body>
+
+    <header class="site-header py-3">
+        <div class="container">
+            <!-- Navbar code adpated from Bootstrap docs at https://getbootstrap.com/docs/4.0/components/navbar/ -->
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <div class="navbar-brand">
+                    <img src="assets/images/logo.svg" class="d-inline-block align-top" width="30" height="30"
+                        alt="logo"> Kelly Driving School
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav p-4 ml-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/test.html">Theory Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Quiz -->
+    <section id="theory-test" class="pb-1 mb-1">
+        <div class="container px-4 px-md-5 py-4">
+            <div id="question-card" class="question-card card">
+                <div class="heading d-flex justify-content-between">
+                    <h3 id="question" class="mb-4"></h3>
+                    <p id="question-number" class="pt-2">1/10</p>
+                </div>
+                <div class="answers d-flex flex-column">
+                    <button id="1" class="answer btn btn-outline-secondary text-start mb-3"></button>
+                    <button id="2" class="answer btn btn-outline-secondary text-start mb-3"></button>
+                    <button id="3" class="answer btn btn-outline-secondary text-start mb-3"></button>
+                    <button id="4" class="answer btn btn-outline-secondary text-start mb-3"></button>
+                </div>
+                <div class="controls d-flex justify-content-between mt-4">
+                    <button id="previous" class="btn btn-secondary">Previous</button>
+                    <button id="next" class="btn btn-secondary">Next</button>
+                </div>
+            </div>
+
+            <div id="result" class="hidden">
+                <div class="info d-flex flex-column align-items-center mb-4 mt-3">
+                    <h2 id="score"></h2>
+                    <button id="startAgain" class="btn btn-outline-secondary">Start Again</button>
+                </div>
+
+                <div id="answeredQuestions">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="site-footer">
+
+    </footer>
+    <!-- Jquery and Bootstrap javascript: used for the mobile menu -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <!-- Custom Javascript -->
+    <link rel="stylesheet" href="assets/js/quiz.js">
+</body>
+
+</html>
