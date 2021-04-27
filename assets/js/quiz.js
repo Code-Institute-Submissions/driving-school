@@ -70,5 +70,23 @@ function prepareQuestion(questionIndex) {
     }
 }
 
+function selectButton(event) {
+    // Remove the class to allow the user to change choices
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("btn-outline-info");
+    }
+
+    // Keep track of which answer the user selected
+    const selectedButton = event.target.id;
+    // Add a class that will display the button as clicked
+    event.target.classList.add("btn-outline-info");
+
+    // Deselect all questions if the user once to switch their choice
+    questions[questionIndex].answers.forEach(ans => ans.answered = false);
+
+    // note that the question has been selected
+    questions[questionIndex].answers[parseInt(selectedButton) - 1].answered = true;
+}
+
 // Start the quiz
 startQuiz();
