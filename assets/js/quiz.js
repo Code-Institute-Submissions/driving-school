@@ -41,6 +41,11 @@ function showButton(btn) {
 // starts the quiz
 function startQuiz() {
     prepareQuestion(questionIndex);
+    // If this is the first question hide the prev button
+    if (questionIndex === 0) {
+        hideButton(prevButton);
+    }
+}
 
 // Start the quiz
 startQuiz();
