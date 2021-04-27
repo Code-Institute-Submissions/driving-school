@@ -47,5 +47,28 @@ function startQuiz() {
     }
 }
 
+// Populates the question with data from the provided questions
+function prepareQuestion(questionIndex) {
+    // sets the text of the dom question element to the text in object
+    question.innerText = questions[questionIndex].question;
+
+    questionNumber.innerText = `${questionIndex + 1}/${questions.length}`
+
+    // loops through all of the dom answer buttons and populates them with the text
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("btn-outline-info");
+
+        answerButtons[i].innerText = questions[questionIndex].answers[i].text;
+
+        // If a question has been answered, select it
+        if (questions[questionIndex].answers[i].answered) {
+            answerButtons[i].classList.add("btn-outline-info");
+        }
+
+        // Add event listeners on all answer buttons
+        answerButtons[i].addEventListener("click", selectButton);
+    }
+}
+
 // Start the quiz
 startQuiz();
