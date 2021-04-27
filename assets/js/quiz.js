@@ -52,8 +52,6 @@ function prepareQuestion(questionIndex) {
     // sets the text of the dom question element to the text in object
     question.innerText = questions[questionIndex].question;
 
-    questionNumber.innerText = `${questionIndex + 1}/${questions.length}`
-
     // loops through all of the dom answer buttons and populates them with the text
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("btn-outline-info");
