@@ -111,7 +111,7 @@ function displayResult() {
 
             // calculate the score
             if (ans.answered && ans.correct) {
-                totalScore += 2;
+                totalScore += 1;
             }
 
             // if the answers the user added is incorrect add red background
