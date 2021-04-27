@@ -12,6 +12,30 @@ function shuffle(a) {
     return a;
 }
 
+// Load all of the dom elements we'll need
+const questionCard = document.getElementById("question-card");
+const result = document.getElementById("result");
+const question = document.getElementById("question");
+const answerButtons = document.getElementsByClassName("answer");
+const score = document.getElementById("score");
+const questionNumber = document.getElementById("question-number");
+const startAgain = document.getElementById("startAgain");
+const resultQuestions = document.getElementById("answeredQuestions");
+const nextButton = document.getElementById("next");
+const prevButton = document.getElementById("previous");
+
+// questionIndex is used to cycle through the questions
+let questionIndex = 0;
+let answeredQuestions = [];
+let totalScore = 0;
+
+function hideButton(btn) {
+    btn.classList.add("hide");
+}
+
+function showButton(btn) {
+    btn.classList.remove("hide");
+}
 
 // Start the quiz
 startQuiz();
