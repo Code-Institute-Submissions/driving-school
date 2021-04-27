@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Font Awsesome CSS: used for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <!-- Googole Fonts: this site uses Open Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kelly Driving School</title>
+</head>
+
+<body>
+
+    <header class="site-header py-3">
+        <div class="container">
+            <!-- Navbar code adpated from Bootstrap docs at https://getbootstrap.com/docs/4.0/components/navbar/ -->
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <div class="navbar-brand">
+                    <img src="assets/images/logo.svg" class="d-inline-block align-top" width="30" height="30"
+                        alt="logo"> Kelly Driving School
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav p-4 ml-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/test.html">Theory Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container px-4 px-md-5 py-4">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="copy-title display-5 font-weight-bold mb-4 ">Contact Us</h2>
+                    <form class="signup-form">
+                        <div class="mb-4">
+                            <label for="contact-name" class="sr-only">Name</label>
+                            <input type="text" id="contact-name" class="form-control" name="name" placeholder="Name"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contact-email" class="sr-only">Email</label>
+                            <input type="email" id="contact-email" class="form-control" name="email"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contact-message" class="sr-only">Name</label>
+                            <textarea id="contact-message" class="form-control" name="message" rows="5"
+                                placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="d-block btn btn-block btn-primary w-auto">Send
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="copy-title display-5 font-weight-bold mb-4 ">Get in Touch</h2>
+                    <ul class="list-inline social-icons mb-4">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.github.com/garybarrettdev" target="_blank" rel="noopener">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+        <!-- Footer  -->
+        <footer class="site-footer">
+
+        </footer>
+        <!-- Jquery and Bootstrap javascript: used for the mobile menu -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+        <!-- Custom Javascript -->
+        <link rel="stylesheet" href="assets/js/contact.js">
+</body>
+
+</html>
