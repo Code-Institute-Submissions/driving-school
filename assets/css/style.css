@@ -11,6 +11,12 @@ body {
     margin-bottom: 3rem;
 }
 
+.answers-card:last-of-type {
+    display: none;
+}
+
+
+/* Utility classes for hiding parts of the quiz */
 .hidden {
     display: none;
 }
@@ -19,6 +25,7 @@ body {
     visibility: hidden;
 }
 
+/* Change Bootstrap button colours */
 .btn-primary,
 .btn-primary:not(:disabled):not(.disabled):active {
     background: #1d6b65;
@@ -29,6 +36,8 @@ body {
     background:  #157067;
 }
 
+
+/* Make Goolge maps more responsive */
 .google-map {
     overflow: hidden;
     padding-bottom: 75%;
@@ -44,7 +53,7 @@ body {
     position: absolute;
 }
 
-/* Navbar */
+/* Change menu colour */
 .navbar-collapse {
     background: #1d293f;
     border-radius: 5px;
