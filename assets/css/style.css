@@ -21,12 +21,12 @@ body {
 
 .btn-primary,
 .btn-primary:not(:disabled):not(.disabled):active {
-    background: #288D85;
+    background: #1d6b65;
 }
 
 .btn-primary:hover,
 .btn-primary.focus, .btn-primary:focus {
-    background:  #126159;
+    background:  #157067;
 }
 
 .google-map {
