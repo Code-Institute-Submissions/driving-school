@@ -127,7 +127,7 @@ function displayResult() {
 
         questionCard.classList.add("hidden");
         result.classList.remove("hidden");
-        score.innerText = `Your score is: ${totalScore}/10`;
+        score.innerText = `Result: ${totalScore}/10`;
 
         wrapper.appendChild(heading);
         wrapper.appendChild(answersWrapper);

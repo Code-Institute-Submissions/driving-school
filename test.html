@@ -53,6 +53,18 @@
 
     <!-- Quiz -->
     <section id="theory-test" class="pb-1 mb-1">
+        <div class="container m-auto text-center">
+            <h1 class="mb-4">Mock Driver Theory Test</h1>
+            <p class="mb-4">Below are 10 sample questions from the official
+                Road Safety Authority theory test.
+            </p>
+            <p class="mb-4">Your score and the answers will be shown
+                at the end of the test.
+            </p>
+            <p class="mb-4">Each time you repeat the test, new questions wil 
+                be picked at random.
+            </p>
+        </div>
         <div class="container px-4 px-md-5 py-4">
             <div id="question-card" class="question-card card">
                 <div class="heading d-flex justify-content-between">
@@ -70,10 +82,15 @@
                 </div>
             </div>
 
-            <div id="result" class="hidden">
-                <div class="info d-flex flex-column align-items-center mb-4 mt-3">
+            <div id="result" class="hidden card mb-5">
+                <div class="container info d-flex flex-column align-items-center mb-4 mt-3">
                     <h2 id="score"></h2>
-                    <button id="startAgain" class="btn btn-outline-secondary">Start Again</button>
+                    <p class="mb-4">The correct answers are highled below in green.
+                    </p>
+                    <p class="mb-4">Any answer that was incorrect is highlighted in red.
+                    </p>
+
+                    <button id="startAgain" class="btn btn-outline-secondary">Start New Test?</button>
                 </div>
 
                 <div id="answeredQuestions">
