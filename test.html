@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Kelly Driving School</title>
+    <title>Galway Driving School</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-0">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo.svg" class="d-inline-block align-top" width="30" height="30"
-                        alt="logo"> Kelly Driving School
+                        alt="logo"> Galway Driving School
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -52,8 +52,8 @@
     </header>
 
     <!-- Quiz -->
-    <section id="theory-test" class="pb-1 mb-1">
-        <div class="container m-auto text-center">
+    <section id="theory-test">
+        <div class="container text-center">
             <h1 class="mb-4">Mock Driver Theory Test</h1>
             <p class="mb-4">Below are 10 sample questions from the official
                 Road Safety Authority theory test.
@@ -61,12 +61,12 @@
             <p class="mb-4">Your score and the answers will be shown
                 at the end of the test.
             </p>
-            <p class="mb-4">Each time you repeat the test, new questions wil 
+            <p class="mb-4">Each time you repeat the test, new questions wil
                 be picked at random.
             </p>
         </div>
-        <div class="container px-4 px-md-5 py-4">
-            <div id="question-card" class="question-card card">
+        <div class="container">
+            <div id="question-card" class="question-card card p-5">
                 <div class="heading d-flex justify-content-between">
                     <h3 id="question" class="mb-4"></h3>
                 </div>
@@ -77,20 +77,20 @@
                     <button id="4" class="answer btn btn-outline-secondary text-start mb-3"></button>
                 </div>
                 <div class="controls d-flex justify-content-between mt-4">
-                    <button id="previous" class="btn btn-secondary">Previous</button>
-                    <button id="next" class="btn btn-secondary">Next</button>
+                    <button id="previous" class="btn btn-primary">Previous</button>
+                    <button id="next" class="btn btn-primary">Next</button>
                 </div>
             </div>
 
-            <div id="result" class="hidden card mb-5">
-                <div class="container info d-flex flex-column align-items-center mb-4 mt-3">
+            <div id="result" class="hidden mb-5">
+                <div class="container card info d-flex flex-column align-items-center p-5 mb-5">
                     <h2 id="score"></h2>
                     <p class="mb-4">The correct answers are highled below in green.
                     </p>
                     <p class="mb-4">Any answer that was incorrect is highlighted in red.
                     </p>
 
-                    <button id="startAgain" class="btn btn-outline-secondary">Start New Test?</button>
+                    <button id="startAgain" class="btn btn-primary">Start New Test?</button>
                 </div>
 
                 <div id="answeredQuestions">

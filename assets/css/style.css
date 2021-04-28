@@ -2,9 +2,25 @@ body {
     background: #F8F9FB;
 }
 
-.card {
+.card,
+.answers-card {
+    background: #FFFFFF;
     border-radius: 0.75rem;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%);
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.answers-card:last-of-type {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 .btn-primary,
@@ -15,10 +31,6 @@ body {
 .btn-primary:hover,
 .btn-primary.focus, .btn-primary:focus {
     background:  #126159;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active {
-
 }
 
 .google-map {
@@ -34,12 +46,4 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-}
-
-.hidden {
-    display: none;
-}
-
-.hide {
-    visibility: hidden;
 }

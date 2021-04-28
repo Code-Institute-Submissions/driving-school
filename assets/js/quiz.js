@@ -94,7 +94,7 @@ function displayResult() {
         const heading = document.createElement("div");
         const answersWrapper = document.createElement("div");
 
-        wrapper.classList.add("question-card", "answers-card");
+        wrapper.classList.add("question-card", "answers-card",);
         heading.classList.add("heading", "d-flex", "justify-content-between");
         answersWrapper.classList.add("answers", "d-flex", "flex-column");
 
