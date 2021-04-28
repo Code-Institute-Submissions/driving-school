@@ -8,8 +8,8 @@ function sendMail(contactForm) {
         function(response) {
             console.log("SUCCESS", response); //Check log to make sure email is sent
             let targetDiv = document.getElementById("formFeedback");
-            let successMessage = "Your message has been sent";
-            targetDiv.className = "alert-success";
+            let successMessage = "Your message has been sent"; //Let user know message is sent
+            targetDiv.className = "alert-success d-flex align-items-center mb-3 p-3";
             contactForm.name.value = "";
             contactForm.emailaddress.value = "";
             contactForm.message.value = "";
