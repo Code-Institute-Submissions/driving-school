@@ -14,9 +14,6 @@ function sendMail(contactForm) {
             contactForm.emailaddress.value = "";
             contactForm.message.value = "";
             targetDiv.innerHTML = successMessage;
-            setTimeout(() => {
-                targetDiv.innerHTML = "";
-            }, 5000);
         },
         function(error) {
             console.log("FAILED", error);
