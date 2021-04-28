@@ -20,6 +20,15 @@
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Kelly Driving School</title>
+    <!-- Script for sending emails from the contact form -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_FMVyLrcBIRDP207FD7RSi");
+        })();
+    </script>
 </head>
 
 <body>
@@ -56,7 +65,7 @@
             <div class="row d-flex justify-content-between">
                 <div class="col-lg-6 mb-5">
                     <h2 class="copy-title display-5 font-weight-bold mb-4 ">Contact Us</h2>
-                    <form class="signup-form">
+                    <form onsubmit="return sendMail(this);">
                         <div class="mb-4">
                             <label for="contact-name" class="sr-only">Name</label>
                             <input type="text" id="contact-name" class="form-control" name="name" placeholder="Name"
@@ -64,7 +73,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="contact-email" class="sr-only">Email</label>
-                            <input type="email" id="contact-email" class="form-control" name="email"
+                            <input type="email" id="contact-email" class="form-control" name="emailaddress"
                                 placeholder="Email Address" required>
                         </div>
                         <div class="mb-4">
