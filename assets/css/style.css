@@ -11,10 +11,6 @@ body {
     margin-bottom: 3rem;
 }
 
-.answers-card:last-of-type {
-    display: none;
-}
-
 .hidden {
     display: none;
 }
