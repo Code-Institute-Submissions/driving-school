@@ -1,4 +1,4 @@
-let questions = shuffle(questionData).slice(0, 10);
+let questions = shuffle(questionData).slice(0, 11);
 
 // Shuffles the questions
 function shuffle(a) {
