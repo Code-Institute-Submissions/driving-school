@@ -107,7 +107,7 @@ ___
   
 - [Test Page ](assets/images/docs/test-question-card-wireframe.png ) (The same one column design is used across all screensizes)
 - [Contact Page Mobile](assets/images/docs/contact-mobile-wireframe.png)
-    - [Contact Page Desktop](assets/images/docs/content-desktop-wireframe.png)
+    - [Contact Page Desktop](assets/images/docs/contact-desktop-wireframe.png)
 - [Index Page Mobile](assets/images/docs/index-mobile-wireframe.png)
     - [Index Page Desktop](assets/images/docs/index-desktop-wireframe.png)
 
