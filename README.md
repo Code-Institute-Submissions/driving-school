@@ -105,11 +105,11 @@ ___
  ### Mockups and Wireframes
 
   
-- [Test Page ](assets/images/test-question-card-wireframe.png ) (The same one column design is used across all screensizes)
-- [Contact Page Mobile](assets/docs/images/contact-mobile-wireframe.png)
-    - [Contact Page Desktop](assets/docs/images/content-desktop-wireframe.png)
-- [Index Page Mobile](assets/docs/images/index-mobile-wireframe.png)
-    - [Index Page Desktop](assets/docs/images/index-desktop-wireframe.png)
+- [Test Page ](assets/images/docs/test-question-card-wireframe.png ) (The same one column design is used across all screensizes)
+- [Contact Page Mobile](assets/images/docs/contact-mobile-wireframe.png)
+    - [Contact Page Desktop](assets/images/docs/content-desktop-wireframe.png)
+- [Index Page Mobile](assets/images/docs/index-mobile-wireframe.png)
+    - [Index Page Desktop](assets/images/docs/index-desktop-wireframe.png)
 
 ## Features
 
@@ -141,11 +141,11 @@ ___
 
 -  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-- [Javascript](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) for the muti-choice test.
+- [Javascript](https://www.javascript.com) for the muti-choice test.
 
 ### Frameworks, Libraries & Programs Used
 
-Emailjs.com
+[Emailjs.com](https://emailjs.com)
 - API used to give the contact form the ability to send emails
 
  [Bootstrap 4.6.0:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
@@ -173,7 +173,7 @@ Emailjs.com
 - GitHub is used to store the projects code after being pushed from Gitpod.
 
 [Sketch](Sketch.com) and [Bootstrap UI for Sketch](http://bootstrap-sketch.com/)
-- Sketch was used to create the wireframes. Bootstrap UI was used to add default Bootsrap elements such as the hamburger icon, buttons, and cards to the wireframes.
+- Sketch was used to create the wireframes. Bootstrap UI was used to add default Bootsrap elements such as the hamburger icon, buttons, forms, and cards to the wireframes.
 
 ---
 
@@ -190,7 +190,7 @@ The W3C HTML Validator and W3C CSS Validator Services were used to validate the 
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](assets/docs/images//css-validation.png)
 
-Jshint.com
+[Jshint.com ](https://jshint.com)
  - No errors were found
 
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
@@ -264,7 +264,7 @@ As the site owner goals essentially match those of visitors, their needs were al
 
 I intended to use the Google Maps API on the contact page.
 
-However, Google suspended my billing account due to possible fraudulent activity associated with my credit card. A screenshot of their email [can be viewed here](images/docs/google-maps-api-billing).
+However, Google suspended my billing account due to possible fraudulent activity associated with my credit card. A screenshot of their email [can be viewed here](assets/images/docs/google-maps-api-billing.png).
 
 I sent them verification documents, but haven't yet recieved a reply.
 
@@ -317,8 +317,8 @@ The project was deployed to GitHub Pages using the following steps:
 [unDraw.co](https://undraw.co) 
 - For the illustrated hero images. (Note: It isn't possible to link to indiviual images on their site to credit them)
 
-[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lplate.svg): 
-L Plate header logo.
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lplate.svg)
+- L Plate header logo.
 
 
 ### Content
