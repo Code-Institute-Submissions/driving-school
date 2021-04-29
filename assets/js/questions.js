@@ -1,3 +1,5 @@
+/*jshint -W033 */
+
 let questionData = [{
         id: 0,
         question: "What is the effect of an incorrectly adjusted driver's seat?",

@@ -1,6 +1,8 @@
+//questionData is defined in questions.js (JSHint warning)
 let questions = shuffle(questionData).slice(0, 6);
 
 // Shuffles the questions
+//Credit: https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array/6274381#6274381
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
@@ -18,7 +20,6 @@ const result = document.getElementById("result");
 const question = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("answer");
 const score = document.getElementById("score");
-const questionNumber = document.getElementById("question-number");
 const startAgain = document.getElementById("startAgain");
 const resultQuestions = document.getElementById("answeredQuestions");
 const nextButton = document.getElementById("next");
@@ -26,7 +27,6 @@ const prevButton = document.getElementById("previous");
 
 // questionIndex is used to cycle through the questions
 let questionIndex = 0;
-let answeredQuestions = [];
 let totalScore = 0;
 
 function hideButton(btn) {
@@ -37,11 +37,11 @@ function showButton(btn) {
     btn.classList.remove("hide");
 }
 
-// This function loads all of the game logic and
-// starts the quiz
+// This function loads all of the game logic and starts the quiz
 function startQuiz() {
     prepareQuestion(questionIndex);
-    // If this is the first question hide the prev button
+
+    // If this is the first question, hide the "previous" button
     if (questionIndex === 0) {
         hideButton(prevButton);
     }
@@ -49,13 +49,13 @@ function startQuiz() {
 
 // Populates the question with data from the provided questions
 function prepareQuestion(questionIndex) {
-    // sets the text of the dom question element to the text in object
+
+    // Sets the text of the dom question element to text in object
     question.innerText = questions[questionIndex].question;
 
-    // loops through all of the dom answer buttons and populates them with the text
+    // Loops through all of the dom answer buttons and populates them with text
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("btn-outline-info");
-
         answerButtons[i].innerText = questions[questionIndex].answers[i].text;
 
         // If a question has been answered, select it
@@ -76,19 +76,19 @@ function selectButton(event) {
 
     // Keep track of which answer the user selected
     const selectedButton = event.target.id;
+
     // Add a class that will display the button as clicked
     event.target.classList.add("btn-outline-info");
 
-    // Deselect all questions if the user once to switch their choice
+    // Deselect all questions if the user changes their choice
     questions[questionIndex].answers.forEach(ans => ans.answered = false);
 
-    // note that the question has been selected
-    questions[questionIndex].answers[parseInt(selectedButton) - 2].answered = true;
+    // Note that the question has been selected
+    questions[questionIndex].answers[parseInt(selectedButton) - 1].answered = true;
 }
 
 function displayResult() {
-    // For each question create a DOM element to add to
-    // represent the answers section
+    // For each question ,create a DOM element to add to represent the answers section
     questions.forEach(question => {
         const wrapper = document.createElement("div");
         const heading = document.createElement("div");
@@ -102,28 +102,26 @@ function displayResult() {
 
         question.answers.forEach(ans => {
             const showAnswer = document.createElement("button");
-            showAnswer.classList.add("answer", "btn", "btn-outline-secondary", "text-start", "mb-3", "disabled")
+            showAnswer.classList.add("answer", "btn", "btn-outline-secondary", "text-start", "mb-3", "disabled");
 
-            showAnswer.innerText = `${ans.text}`
-            answersWrapper.appendChild(showAnswer)
+            showAnswer.innerText = `${ans.text}`;
+            answersWrapper.appendChild(showAnswer);
 
-            // calculate the score
+            // Calculate the score
             if (ans.answered && ans.correct) {
                 totalScore += 1;
             }
-
-            // if the answers the user added is incorrect add red background
+            // If the answer a user selected is incorrect, add a red background
             if (ans.answered && !ans.correct) {
                 showAnswer.classList.remove("btn-outline-secondary");
                 showAnswer.classList.add("btn-danger");
             }
-
-            // if it is correct add green background
+            // If it's correct, add a green background
             if (ans.correct) {
                 showAnswer.classList.remove("btn-outline-secondary");
                 showAnswer.classList.add("btn-success");
             }
-        })
+        });
 
         questionCard.classList.add("hidden");
         result.classList.remove("hidden");
@@ -133,7 +131,7 @@ function displayResult() {
         wrapper.appendChild(answersWrapper);
 
         resultQuestions.appendChild(wrapper);
-    })
+    });
 
     // Start again
     startAgain.addEventListener("click", () => location.reload());
@@ -141,31 +139,33 @@ function displayResult() {
 
 // Handle forwarding to next question
 nextButton.addEventListener("click", () => {
-    // incereasing the question index
+    // Increasing the question index
     questionIndex++;
-    // preparing the next question
+
+    // Preparing the next question
     prepareQuestion(questionIndex);
-    // Show the prev button
+
+    // Show the previous button
     if (questionIndex > 0) {
         showButton(prevButton);
     }
-    // Hide the next button if reached the end of the questions list
+
+    // Hide the next button at the end of the questions list
     if (questionIndex === questions.length - 1) {
         hideButton(nextButton);
     }
-
     if (questionIndex === questions.length - 1) {
         // Display the results if we got to the end of the quiz
         displayResult();
     }
-})
+});
 
 prevButton.addEventListener("click", () => {
-    // decrease the question index
+    // Decrease the question index
     questionIndex--;
-    // prepare the previous question
+    // Prepare the previous question
     prepareQuestion(questionIndex);
-    // Hide the prev button
+    // Hide the previous button
     if (questionIndex == 0) {
         hideButton(prevButton);
     }
@@ -173,7 +173,7 @@ prevButton.addEventListener("click", () => {
     if (questionIndex !== questionIndex.length - 1) {
         showButton(nextButton);
     }
-})
+});
 
 // Start the quiz
 startQuiz();
