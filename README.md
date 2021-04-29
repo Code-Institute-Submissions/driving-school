@@ -289,6 +289,8 @@ The official test requires drivers to answer 40 questions in 45 minutes.
 
 Ideally, I'd like to be able to recreate that full test with a 45 minute timer if visitors want to practice it. However, there are over 800 possible questions on the test, and no API to pull them from - the company that runs the test [charges a monthly fee for access to revision material](https://dttstore.prometric.com/categories/car-theory-test).
 
+I've copy & pasted 25 questions to the quiz for this site. I'd like to add more, but it's time consuming doing it manually. I'll look into possible ways to scrape the questions in future.
+
 ---
 
 ## Deployment
@@ -327,5 +329,6 @@ The project was deployed to GitHub Pages using the following steps:
 
  ### Code
 
- - Stackoverlow for the function to shuffle an array:
+ - Stackoverflow for the function to shuffle an array
+ 
  https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array/6274381#6274381
