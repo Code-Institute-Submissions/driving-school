@@ -98,7 +98,7 @@ function displayResult() {
         heading.classList.add("heading", "d-flex", "justify-content-between");
         answersWrapper.classList.add("answers", "d-flex", "flex-column");
 
-        heading.innerHTML = `<h3 id="question" class="mb-4">${question.question}</h3>`;
+        heading.innerHTML = `<h4 id="question" class="mb-4">${question.question}</h4>`;
 
         question.answers.forEach(ans => {
             const showAnswer = document.createElement("button");
