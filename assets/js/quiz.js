@@ -1,4 +1,4 @@
-let questions = shuffle(questionData).slice(0, 11);
+let questions = shuffle(questionData).slice(0, 6);
 
 // Shuffles the questions
 function shuffle(a) {
@@ -83,7 +83,7 @@ function selectButton(event) {
     questions[questionIndex].answers.forEach(ans => ans.answered = false);
 
     // note that the question has been selected
-    questions[questionIndex].answers[parseInt(selectedButton) - 1].answered = true;
+    questions[questionIndex].answers[parseInt(selectedButton) - 2].answered = true;
 }
 
 function displayResult() {
@@ -127,7 +127,7 @@ function displayResult() {
 
         questionCard.classList.add("hidden");
         result.classList.remove("hidden");
-        score.innerText = `Result: ${totalScore}/10`;
+        score.innerText = `Result: ${totalScore}/5`;
 
         wrapper.appendChild(heading);
         wrapper.appendChild(answersWrapper);
