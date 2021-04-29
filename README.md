@@ -25,13 +25,12 @@ The site contains a multiple-choice exam that mimics the [official Road Safety A
 * [Testing](https://github.com/GaryBarrettDev/driving-school#testing)
 
      * [Code validation](https://github.com/GaryBarrettDev/driving-school#code-validation)
-     * [Accessibility Testing](https://github.com/GaryBarrettDev/driving-school#accessibility-testing)
     * [Responsive Testing](https://github.com/GaryBarrettDev/driving-school#responsive-testing)
     * [Further Testing](https://github.com/GaryBarrettDev/driving-school#further-testing)
     * [Testing User Stories from User Experience (UX) Section](https://github.com/GaryBarrettDev/driving-school#testing-user-stories-from-user-experience-ux-section)
-     * [First Time Visitor Goals](https://github.com/GaryBarrettDev/driving-school#first-time-visitor-goals-1)
-     * [Known Bugs](https://github.com/GaryBarrettDev/driving-school#known-bugs)
-    * [Deployment](https://github.com/GaryBarrettDev/driving-school#deployment)
+
+
+* [Deployment](https://github.com/GaryBarrettDev/driving-school#deployment)
   
 
  *  [Credits](https://github.com/GaryBarrettDev/driving-school#credits)
@@ -167,10 +166,10 @@ Emailjs.com
 
 [GitHub:](https://github.com/)
 
-- GitHub is used to store the projects code after being pushed from Git.
+- GitHub is used to store the projects code after being pushed from Gitpod.
 
-Sketch.com
-- Used to create mockups and wireframes.
+[Sketch](Sketch.com) and [Bootstrap UI for Sketch](http://bootstrap-sketch.com/)
+- Sketch was used to create the wireframes. Bootstrap UI was used to add default Bootsrap elements such as the hamburger icon, buttons, and cards to the wireframe.
 
 ---
 
@@ -191,7 +190,7 @@ Jshint.com
  - No errors were found
 
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- Found  contrast issues and stated that some headings  were non-sequential. These issues were  were fixed for accessibility.
+- Found  issues with contrast, size of the social icons, and non-sequential headings. These issues were  were fixed for accessibility.
 
 ![Google Lighthouse Results](assets/images/docs/google-lighthouse-results.gif)
 
@@ -253,92 +252,57 @@ ___
 4) I want to able to practice answering sample test questions before I sit my driver theory test.
     - The mock multi-choice test helps visitors prepare for the real test.
 
+As the site owner goals essentially match those of visitors, their needs were also met.
 
+---
 
+## Trouble shooting Google Maps
+
+I intended to use the Google Maps API on the contact page.
+
+However, Google suspended my billing account due to possible fraudulent activity associated with my credit card. A screenshot of their email [can be viewed here](images/docs/google-maps-api-billing).
+
+I sent them verification documents, but haven't yet recieved a reply.
+
+As a result, I did not have access to their API.
+
+As a workaround, I added a Google Map via an embedded iframe, then used [CSS to make it responsive without any overflow issues](https://github.com/GaryBarrettDev/driving-school/blob/21cb65913ed506a86cdf8a29b844501255568ba4/assets/css/style.css#L41).
+
+While this isn't ideal, it does help visitors achieve their goals by providing them with an interactive map they can use to locate the business.
+
+I tried looking for alternative map API's that could be used, but none seemd to be as user friendly for visitors as Google Maps.
 
 ----
+
+## Features to be implemented
+- Backend that allows users to create accounts
+- Booking calender to allow users to pick when they want to take lessons
+- Payment gateway so visitors can pay for lessons with their credit cards.
+
+I considered adding a timer to the quiz, but decided against it. The aim of the quiz is for accuracy - to help people learn, it's not for speed.
+
+The official test requires drivers to answer 40 questions in 45 minutes. 
+
+Ideally, I'd like to be able to recreate that full test with a 45 minute timer if visitors want to practice it. However, there are over 800 possible questions on the test, and no API to pull them from - the company that runs the test [charges a monthly fee for access to revision material](https://dttstore.prometric.com/categories/car-theory-test).
+
+---
 
 ## Deployment
 
 
 The project was deployed to GitHub Pages using the following steps:
 
-1. Logged in to GitHub and located the [Driving School GitHub Repository](https://github.com/GaryBarrettDev/driving-school)
+1. Log in to GitHub and navigate to the [Driving School GitHub Repository](https://github.com/GaryBarrettDev/driving-school)
 
-2. At the top of the Repository, locate the "Settings" Button on the menu.
+2. At the top of the Repository, click the "Settings" Button on the menu.
 
-3. Scroll down the Settings page until the "GitHub Pages" Section.
+3. Scroll down to the "GitHub Pages" Section.
 
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
+4. Under "Source", click "None" from the dropdown option and choose "Master Branch".
 
-5. The page will automatically refresh.
+5. The  published site is now available in the "GitHub Pages" section.
 
-6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section.
-
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
-
-  GitHub Pages
-
-1. Log in to GitHub and locate the [Flux Time GitHub Repository](https://github.com/GaryBarrettDev/driving-school)
-
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-
-3. You should now have a copy of the original repository in your GitHub account.
-
-  
-
-### Making a Local Clone
-
-  
-
-1. Log in to GitHub and locate the [Flux Time GitHub Repository](https://github.com/GaryBarrettDev/driving-school)
-
-2. Under the repository name, click "Clone or download".
-
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-
-4. Open Git Bash
-
-5. Change the current working directory to the location where you want the cloned directory to be made.
-
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-  
-
-```
-
-$ git clone https://github.com/GaryBarrettDev/driving-school
-
-```
-
-  
-
-7. Press Enter. Your local clone will be created.
-
-  
-
-```
-
-$ git clone https://github.com/GaryBarrettDev/driving-school
-
-> Cloning into `CI-Clone`...
-
-> remote: Counting objects: 10, done.
-
-> remote: Compressing objects: 100% (8/8), done.
-
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-
-> Unpacking objects: 100% (10/10), done.
-
-```
-
-  
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
-
- --- 
+----
 
 ## Credits
 
@@ -346,13 +310,18 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
--  [unDraw.co](https://undraw.co) : For the illustrated hero images. (Note: It isn't possible to directly link images on Undraws site to credit them individually)
+[unDraw.co](https://undraw.co) 
+- For the illustrated hero images. (Note: It isn't possible to link to indiviual images on their site to credit them)
 
--  [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lplate.svg): L Plate header logo.
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lplate.svg): 
+L Plate header logo.
 
 
 ### Content
 
 - Content on the site was adapted from [Theorytest.ie](https://theorytest.ie) 
 
- 
+ ### Code
+
+ - Stackoverlow for the function to shuffle an array:
+ https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array/6274381#6274381
