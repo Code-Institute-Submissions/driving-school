@@ -10,7 +10,7 @@ The site contains a multiple-choice exam that mimics the [official Road Safety A
 
 ## Table of Contents
 
-* [Site Owner Goals](https://github.com/GaryBarrettDev/driving-school#site-owner-and-business-goals)
+* [Site Owner Goals](https://github.com/GaryBarrettDev/driving-school#site-owner-goals)
 * [User Experience](https://github.com/GaryBarrettDev/driving-school#user-experience-ux)
 * [Design](https://github.com/GaryBarrettDev/driving-school#design)
     * [Colour Scheme](https://github.com/GaryBarrettDev/driving-school#colour-scheme)
@@ -28,6 +28,10 @@ The site contains a multiple-choice exam that mimics the [official Road Safety A
     * [Responsive Testing](https://github.com/GaryBarrettDev/driving-school#responsive-testing)
     * [Further Testing](https://github.com/GaryBarrettDev/driving-school#further-testing)
     * [Testing User Stories from User Experience (UX) Section](https://github.com/GaryBarrettDev/driving-school#testing-user-stories-from-user-experience-ux-section)
+
+* [Troubleshooting Google Maps](https://github.com/GaryBarrettDev/driving-school#troubleshooting-google-maps)
+
+* [Features to be implemented](https://github.com/GaryBarrettDev/driving-school#features-to-be-implmented)
 
 
 * [Deployment](https://github.com/GaryBarrettDev/driving-school#deployment)
@@ -101,7 +105,7 @@ ___
  ### Mockups and Wireframes
 
   
-- [Test Page ](assets/images/test-question-card-wireframe.png ). (This is the same one column design across all screensizes)
+- [Test Page ](assets/images/test-question-card-wireframe.png ) (The same one column design is used across all screensizes)
 - [Contact Page Mobile](assets/docs/images/contact-mobile-wireframe.png)
     - [Contact Page Desktop](assets/docs/images/content-desktop-wireframe.png)
 - [Index Page Mobile](assets/docs/images/index-mobile-wireframe.png)
@@ -169,7 +173,7 @@ Emailjs.com
 - GitHub is used to store the projects code after being pushed from Gitpod.
 
 [Sketch](Sketch.com) and [Bootstrap UI for Sketch](http://bootstrap-sketch.com/)
-- Sketch was used to create the wireframes. Bootstrap UI was used to add default Bootsrap elements such as the hamburger icon, buttons, and cards to the wireframe.
+- Sketch was used to create the wireframes. Bootstrap UI was used to add default Bootsrap elements such as the hamburger icon, buttons, and cards to the wireframes.
 
 ---
 
@@ -218,7 +222,7 @@ No issues were found.
 ### Multiple-Choice Quiz Testing
 Tested that:
 - questions are shuffled
-- next & previous buttons funtion
+- next & previous buttons function and appear at the correct time
 - user can change their answers
 - scores are calculated and shown to users
 - answers selected are highlighted by whether they're right or wrong
@@ -256,7 +260,7 @@ As the site owner goals essentially match those of visitors, their needs were al
 
 ---
 
-## Trouble shooting Google Maps
+## Troubleshooting Google Maps
 
 I intended to use the Google Maps API on the contact page.
 
